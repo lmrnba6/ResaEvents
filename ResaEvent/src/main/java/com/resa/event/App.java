@@ -10,8 +10,10 @@ public class App {
 
 	
 	public static void main(String[] args) {
-		//Spring app
+		
 		SpringApplication.run(App.class, args);
 	}
+	
+	
 
 }
