@@ -31,9 +31,9 @@ public class User
     @Column(name = "LASTNAME")
     private String lastName;
     @OneToOne
-    @Column(name = "CONTACT_ID")
+    @JoinColumn(name = "CONTACT_ID")
     private Contact contact;
     @OneToOne
-    @Column(name = "ADRESS_ID")
+    @JoinColumn(name = "ADRESS_ID")
     private Address address;
 }

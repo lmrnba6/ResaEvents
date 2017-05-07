@@ -29,21 +29,21 @@ public class Business
     @Column(name = "NAME")
     private String name;
     @OneToOne
-    @Column(name = "ADDRESS")
+    @JoinColumn(name = "ADDRESS")
     private Address address;
     @OneToOne
-    @Column(name = "CONTACT")
+    @JoinColumn(name = "CONTACT")
     private Contact contact;
     @OneToOne
-    @Column(name = "AVAILABILITY")
+    @JoinColumn(name = "AVAILABILITY")
     private Availability Availability;
     @Column(name = "DESCRIPTION")
     private String description;
     @OneToOne
-    @Column(name = "CATEGORY")
+    @JoinColumn(name = "CATEGORY")
     private Category category;
     @OneToOne
-    @Column(name = "USER_ID")
+    @JoinColumn(name = "USER_ID")
     private User user;
     @Column(name = "IMAGE")
     private String image;

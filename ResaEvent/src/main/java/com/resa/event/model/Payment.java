@@ -27,13 +27,13 @@ public class Payment
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long paymentId;
     @OneToOne
-    @Column(name = "USER_ID")
+    @JoinColumn(name = "USER_ID")
     private User user;
     @OneToOne
-    @Column(name = "RESERVATION_ID")
+    @JoinColumn(name = "RESERVATION_ID")
     private Reservation reservation;
     @OneToOne
-    @Column(name = "CARD_ID")
+    @JoinColumn(name = "CARD_ID")
     private Card card;
     @Column(name = "STATUS")
     private String status;

@@ -33,14 +33,14 @@ public class Reservation
     @Column(name = "END_DATE")
     private Date endDate;
     @OneToOne
-    @Column(name = "BUSINESS_ID")
+    @JoinColumn(name = "BUSINESS_ID")
     private Business business;
     @Column(name = "PEOPLE_NUMBER")
     private Long peopleNumber;
     @Column(name = "STATUS")
     private String status;
     @OneToOne
-    @Column(name = "USER_ID")
+    @JoinColumn(name = "USER_ID")
     private User user;
     @Column(name = "COMMENT")
     private String comment;
