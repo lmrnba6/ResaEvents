@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hsqldb.types.DateTimeType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,9 +29,8 @@ public class Availability
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long availabilityId;
     @Column(name = "OPENING")
-    private DateTime opening;
+    private DateTimeType opening;
     @Column(name = "CLOSING")
-    private DateTime closing;   
-    
+    private DateTimeType closing;   
     
 }
