@@ -30,8 +30,10 @@ public class User
     private String firstName;
     @Column(name = "LASTNAME")
     private String lastName;
+    @OneToOne
     @Column(name = "CONTACT_ID")
     private Contact contact;
+    @OneToOne
     @Column(name = "ADRESS_ID")
     private Address address;
 }

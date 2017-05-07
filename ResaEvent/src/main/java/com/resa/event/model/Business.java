@@ -28,16 +28,21 @@ public class Business
     private Long businessId;
     @Column(name = "NAME")
     private String name;
+    @OneToOne
     @Column(name = "ADDRESS")
     private Address address;
+    @OneToOne
     @Column(name = "CONTACT")
     private Contact contact;
+    @OneToOne
     @Column(name = "AVAILABILITY")
     private Availability Availability;
     @Column(name = "DESCRIPTION")
     private String description;
+    @OneToOne
     @Column(name = "CATEGORY")
     private Category category;
+    @OneToOne
     @Column(name = "USER_ID")
     private User user;
     @Column(name = "IMAGE")
