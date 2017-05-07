@@ -19,19 +19,21 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "USERS")
-public class User
+@Table(name = "ADDRESS")
+public class Address
 {
     @Id
-    @Column(name = "USER_ID")
+    @Column(name = "ADDRESS_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
-    @Column(name = "FIRSTNAME")
-    private String firstName;
-    @Column(name = "LASTNAME")
-    private String lastName;
-    @Column(name = "CONTACT_ID")
-    private Contact contact;
-    @Column(name = "ADRESS_ID")
-    private Address address;
+    private Long addressId;
+    @Column(name = "STREET_NUMBER")
+    private Long streetNumber;
+    @Column(name = "STREET_NAME")
+    private String streetName;
+    @Column(name = "PROVINCE")
+    private String province;
+    @Column(name = "ZIP_CODE")
+    private String zipCode;
+    @Column(name = "COUNTRY")
+    private String country;
 }
