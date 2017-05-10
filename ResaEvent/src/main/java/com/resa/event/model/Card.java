@@ -25,7 +25,7 @@ public class Card
     @Id
     @Column(name = "CARD_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String cardId;
+    private Long cardId;
     @Column(name = "CARD_NUMBER")
     private Long cardNumber;
     @Column(name = "EXPIRY")
