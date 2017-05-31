@@ -35,7 +35,7 @@ public class Payment
     @JoinColumn(name = "RESERVATION_ID")
     private Reservation reservation;
     @OneToOne
-    @JoinColumn(name = "CARD_ID")
+    @JoinColumn(name = "CARD")
     private Card card;
     @Column(name = "STATUS")
     private String status;
